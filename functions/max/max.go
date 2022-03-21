@@ -1,20 +1,20 @@
 package max
 
-func Max(number []int) int {
+func Max(Number []int) int {
 	largestNumber := 0
 
-	for a := 0; a < len(number); a++ {
-		if number[a] == number[len(number)-1] {
+	for a := 0; a < len(Number); a++ {
+		if Number[a] == Number[len(Number)-1] {
 			var temp int
-			indexawal := a
-			indexakhir := len(number) - 1
+			indexAwal := a
+			indexAkhir := len(Number) - 1
 
-			for indexawal < indexakhir {
+			for indexAwal < indexAkhir {
 
-				if number[indexawal] == number[indexakhir] {
-					temp = number[indexawal]
-					indexawal++
-					indexakhir--
+				if Number[indexAwal] == Number[indexAkhir] {
+					temp = Number[indexAwal]
+					indexAwal++
+					indexAkhir--
 				} else {
 					break
 				}
